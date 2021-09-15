@@ -1,0 +1,8 @@
+pull_request_rules:
+- actions:
+    comment:
+      message: yo
+    merge: {}
+  conditions:
+  - base=20210915095242/test_subscription/main
+  name: abuse repository
