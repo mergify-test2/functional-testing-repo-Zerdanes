@@ -1,0 +1,9 @@
+pull_request_rules:
+- actions:
+    merge:
+      commit_message: template
+      template_commit_message: "{{ title }} (#{{ number }})\n                    {{body}}\n\
+        \n                    super RP!\n                    "
+  conditions:
+  - base=20210929115744/test_merge_template/main
+  name: merge on main
